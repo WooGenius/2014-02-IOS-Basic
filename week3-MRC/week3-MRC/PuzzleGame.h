@@ -12,17 +12,12 @@
 
 @property(retain) NSMutableArray *puzzle;
 @property(retain) NSMutableArray *positions;
+@property(retain) NSMutableArray *redoPositions;
 @property(retain) NSNumber *puzzleSize;
 
-- (instancetype)initPuzzle : (NSNumber*)initSize;
-- (void)printPuzzle;
-
-//- sufflePuzzle;
-//- move : (NSCharacterSet*)keyDown;
-
-//- moveLeft;
-//- moveRight;
-//- moveUp;
-//- moveDown;
+- (instancetype) initPuzzle : (NSNumber*)initSize;
+- (void) printPuzzle;
+- (void) distributeEvent : (char)keyDown;
+- (void) shufflePuzzle;
 
 @end
