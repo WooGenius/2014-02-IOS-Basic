@@ -12,12 +12,14 @@
 
 
 @property(retain) RPSModel *model;
+@property(retain) NSString *result;
 
 @end
 
 @implementation ViewController
 @synthesize model;
 @synthesize rpsImg;
+@synthesize result;
 
 - (void)viewDidLoad
 {
@@ -26,6 +28,16 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(getRPS:)
                                                  name:@"MyRPSResult"
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(iWillDie:)
+                                                 name:@"IWillDie"
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(iWillArrive:)
+                                                 name:@"IWillArrive"
                                                object:nil];
     
     model = [[RPSModel alloc] init];
@@ -41,8 +53,20 @@
 }
 
 - (void) getRPS:(NSNotification *)noti {
-    NSString *result = [[noti userInfo] objectForKey:@"result"];
+    result = [[noti userInfo] objectForKey:@"result"];
     NSLog(@"%@", [result stringByAppendingString:@".png"]);
+    
+    [rpsImg setImage:[UIImage imageNamed:[result stringByAppendingString:@".png"]]];
+}
+
+- (void) iWillDie:(NSNotification *)noti {
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setObject:result forKey:@"RPSResult"];
+}
+
+- (void) iWillArrive:(NSNotification *)noti {
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    result = [prefs stringForKey:@"RPSResult"];
     
     [rpsImg setImage:[UIImage imageNamed:[result stringByAppendingString:@".png"]]];
 }
