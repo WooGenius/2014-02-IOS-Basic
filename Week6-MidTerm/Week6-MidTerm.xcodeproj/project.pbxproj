@@ -44,6 +44,7 @@
 		064A7A641999D92A008AD042 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 064A7A4E1999D92A008AD042 /* 22.jpg */; };
 		064A7AC01999E080008AD042 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064A7ABF1999E080008AD042 /* TableViewController.m */; };
 		064A7AC31999E198008AD042 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064A7AC21999E198008AD042 /* PhotoViewController.m */; };
+		06795534199A022300477408 /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06795533199A022300477408 /* AlbumModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		064A7ABF1999E080008AD042 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		064A7AC11999E198008AD042 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		064A7AC21999E198008AD042 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		06795532199A022300477408 /* AlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumModel.h; sourceTree = "<group>"; };
+		06795533199A022300477408 /* AlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				064A7ABF1999E080008AD042 /* TableViewController.m */,
 				064A7AC11999E198008AD042 /* PhotoViewController.h */,
 				064A7AC21999E198008AD042 /* PhotoViewController.m */,
+				06795532199A022300477408 /* AlbumModel.h */,
+				06795533199A022300477408 /* AlbumModel.m */,
 				064A7A121999D7AE008AD042 /* AppDelegate.h */,
 				064A7A131999D7AE008AD042 /* AppDelegate.m */,
 				064A7A151999D7AE008AD042 /* Main.storyboard */,
@@ -353,6 +358,7 @@
 				064A7A141999D7AE008AD042 /* AppDelegate.m in Sources */,
 				064A7AC31999E198008AD042 /* PhotoViewController.m in Sources */,
 				064A7AC01999E080008AD042 /* TableViewController.m in Sources */,
+				06795534199A022300477408 /* AlbumModel.m in Sources */,
 				064A7A101999D7AE008AD042 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

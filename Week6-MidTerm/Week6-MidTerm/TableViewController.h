@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AlbumModel.h"
 
 @interface TableViewController : UITableViewController
 
-@property (nonatomic, strong) NSMutableArray *objects;
+@property (nonatomic, strong) AlbumModel *model;
 
 
 @end
