@@ -14,4 +14,5 @@
 - (void)sortObjectsBy:(NSString*)key;
 - (NSInteger)getCount;
 - (void)reloadTableView;
+- (void)removePhotoAtIndex:(NSInteger)index;
 @end
