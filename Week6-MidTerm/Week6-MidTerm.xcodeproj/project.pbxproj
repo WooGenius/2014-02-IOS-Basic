@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060D3E7919A32AB500B404E5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 060D3E7819A32AB500B404E5 /* Reachability.m */; };
 		064A7A041999D7AE008AD042 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064A7A031999D7AE008AD042 /* Foundation.framework */; };
 		064A7A061999D7AE008AD042 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064A7A051999D7AE008AD042 /* CoreGraphics.framework */; };
 		064A7A081999D7AE008AD042 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064A7A071999D7AE008AD042 /* UIKit.framework */; };
@@ -58,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060D3E7719A32AB500B404E5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability/Reachability.h; sourceTree = "<group>"; };
+		060D3E7819A32AB500B404E5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability/Reachability.m; sourceTree = "<group>"; };
 		064A7A001999D7AE008AD042 /* Week6-MidTerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week6-MidTerm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		064A7A031999D7AE008AD042 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		064A7A051999D7AE008AD042 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -162,6 +165,8 @@
 		064A7A091999D7AE008AD042 /* Week6-MidTerm */ = {
 			isa = PBXGroup;
 			children = (
+				060D3E7719A32AB500B404E5 /* Reachability.h */,
+				060D3E7819A32AB500B404E5 /* Reachability.m */,
 				064A7A381999D90C008AD042 /* img */,
 				064A7ABE1999E080008AD042 /* TableViewController.h */,
 				064A7ABF1999E080008AD042 /* TableViewController.m */,
@@ -359,6 +364,7 @@
 				064A7AC31999E198008AD042 /* PhotoViewController.m in Sources */,
 				064A7AC01999E080008AD042 /* TableViewController.m in Sources */,
 				06795534199A022300477408 /* AlbumModel.m in Sources */,
+				060D3E7919A32AB500B404E5 /* Reachability.m in Sources */,
 				064A7A101999D7AE008AD042 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

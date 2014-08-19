@@ -26,6 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *filePath = nil;
+    
 
     NSLog(@"%@", self.detailObject);
     
@@ -34,7 +38,14 @@
     
     UIImage *img = [UIImage imageNamed:[self.detailObject valueForKey:@"image"]];
     
-    NSLog(@"%@", img);
+    if (!img) {
+        NSString *urlString = [self.detailObject valueForKey:@"image"];
+        NSURL *url = [NSURL URLWithString:urlString];
+        
+        filePath = [cachesPath stringByAppendingPathComponent: [url pathComponents][2] ];
+
+        img = [UIImage imageWithContentsOfFile:filePath];
+    }
     
     [self.photoView setImage:img];
 }

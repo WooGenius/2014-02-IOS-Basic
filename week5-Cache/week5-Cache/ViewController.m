@@ -59,6 +59,33 @@
     return _scrollView;
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    int startImgNumAfterScroll = _scrollView.contentOffset.y / heightPerImage + 1;
+    int endImgNumAfterScroll = (_scrollView.contentOffset.y + deviceHeight) / heightPerImage + 1;
+    
+    //    NSLog(@"did scroll %d - %d", startImgNumAfterScroll, endImgNumAfterScroll);
+    
+    if (startImgNum != startImgNumAfterScroll && startImgNum > 0 && startImgNumAfterScroll > 0) {
+        if (startImgNum < startImgNumAfterScroll) {
+            [self dropImgWithIndex:startImgNum];
+        } else {
+            [self loadImgWithIndex:startImgNumAfterScroll];
+        }
+    }
+    
+    if (endImgNum != endImgNumAfterScroll && endImgNum < (numOfImg + 1) && endImgNumAfterScroll < (numOfImg + 1)) {
+        if (endImgNum < endImgNumAfterScroll) {
+            [self loadImgWithIndex:endImgNumAfterScroll];
+        } else {
+            [self dropImgWithIndex:endImgNum];
+        }
+    }
+    
+    startImgNum = imageScroll.contentOffset.y / heightPerImage + 1;
+    endImgNum = (imageScroll.contentOffset.y + deviceHeight) / heightPerImage + 1;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

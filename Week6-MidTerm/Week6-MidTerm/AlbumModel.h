@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Reachability.h"
 
 @interface AlbumModel : NSObject
+@property (strong, nonatomic) NSMutableData *responseData;
 @property (strong, nonatomic) NSMutableArray *objects;
 - (NSMutableArray*)getAlbumObjects;
 - (void)sortObjectsBy:(NSString*)key;
