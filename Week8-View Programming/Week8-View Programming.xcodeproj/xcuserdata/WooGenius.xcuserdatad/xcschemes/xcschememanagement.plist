@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>asdf.xcscheme</key>
+		<key>Week8-View Programming.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>060D3EC619A5D0E100B404E5</key>
+		<key>060D3F0A19AC55B300B404E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>060D3EEA19A5D0E100B404E5</key>
+		<key>060D3F2B19AC55B400B404E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

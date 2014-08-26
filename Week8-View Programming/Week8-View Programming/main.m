@@ -1,8 +1,8 @@
 //
 //  main.m
-//  asdf
+//  Week8-View Programming
 //
-//  Created by WooGenius on 8/21/14.
+//  Created by WooGenius on 8/26/14.
 //  Copyright (c) 2014 WooGenius. All rights reserved.
 //
 

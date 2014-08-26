@@ -1,18 +1,18 @@
 //
-//  asdfTests.m
-//  asdfTests
+//  Week8_View_ProgrammingTests.m
+//  Week8-View ProgrammingTests
 //
-//  Created by WooGenius on 8/21/14.
+//  Created by WooGenius on 8/26/14.
 //  Copyright (c) 2014 WooGenius. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface asdfTests : XCTestCase
+@interface Week8_View_ProgrammingTests : XCTestCase
 
 @end
 
-@implementation asdfTests
+@implementation Week8_View_ProgrammingTests
 
 - (void)setUp
 {

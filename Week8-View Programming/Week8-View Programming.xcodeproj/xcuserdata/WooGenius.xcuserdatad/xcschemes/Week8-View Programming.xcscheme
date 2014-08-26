@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "060D3EC619A5D0E100B404E5"
-               BuildableName = "asdf.app"
-               BlueprintName = "asdf"
-               ReferencedContainer = "container:asdf.xcodeproj">
+               BlueprintIdentifier = "060D3F0A19AC55B300B404E5"
+               BuildableName = "Week8-View Programming.app"
+               BlueprintName = "Week8-View Programming"
+               ReferencedContainer = "container:Week8-View Programming.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "060D3EEA19A5D0E100B404E5"
-               BuildableName = "asdfTests.xctest"
-               BlueprintName = "asdfTests"
-               ReferencedContainer = "container:asdf.xcodeproj">
+               BlueprintIdentifier = "060D3F2B19AC55B400B404E5"
+               BuildableName = "Week8-View ProgrammingTests.xctest"
+               BlueprintName = "Week8-View ProgrammingTests"
+               ReferencedContainer = "container:Week8-View Programming.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "060D3EC619A5D0E100B404E5"
-            BuildableName = "asdf.app"
-            BlueprintName = "asdf"
-            ReferencedContainer = "container:asdf.xcodeproj">
+            BlueprintIdentifier = "060D3F0A19AC55B300B404E5"
+            BuildableName = "Week8-View Programming.app"
+            BlueprintName = "Week8-View Programming"
+            ReferencedContainer = "container:Week8-View Programming.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "060D3EC619A5D0E100B404E5"
-            BuildableName = "asdf.app"
-            BlueprintName = "asdf"
-            ReferencedContainer = "container:asdf.xcodeproj">
+            BlueprintIdentifier = "060D3F0A19AC55B300B404E5"
+            BuildableName = "Week8-View Programming.app"
+            BlueprintName = "Week8-View Programming"
+            ReferencedContainer = "container:Week8-View Programming.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "060D3EC619A5D0E100B404E5"
-            BuildableName = "asdf.app"
-            BlueprintName = "asdf"
-            ReferencedContainer = "container:asdf.xcodeproj">
+            BlueprintIdentifier = "060D3F0A19AC55B300B404E5"
+            BuildableName = "Week8-View Programming.app"
+            BlueprintName = "Week8-View Programming"
+            ReferencedContainer = "container:Week8-View Programming.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
