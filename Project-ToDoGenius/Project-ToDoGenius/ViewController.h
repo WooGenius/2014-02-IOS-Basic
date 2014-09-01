@@ -12,6 +12,6 @@
 
 @end
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate>
 
 @end

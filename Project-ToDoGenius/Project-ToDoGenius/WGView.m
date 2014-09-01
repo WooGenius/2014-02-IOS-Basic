@@ -29,7 +29,7 @@
     label.backgroundColor = !(num % 2) ? [UIColor orangeColor] : [UIColor purpleColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.font = [UIFont boldSystemFontOfSize:128];
-    label.text = [NSString stringWithFormat:@"%@", arr[num]];
+    label.text = [NSString stringWithFormat:@"%@", arr[num%6]];
     
     [self setFrame:frame];
     [self addSubview:label];
