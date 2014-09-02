@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  Week9-Block&GCD
+//  week9-BlockGCD
 //
 //  Created by WooGenius on 9/2/14.
 //  Copyright (c) 2014 WooGenius. All rights reserved.

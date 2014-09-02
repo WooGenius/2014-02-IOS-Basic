@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Week9-Block&amp;GCD.xcscheme</key>
+		<key>week9-BlockGCD.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0620502B19B58F710072EDDF</key>
+		<key>0620506E19B5A5F50072EDDF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0620504C19B58F710072EDDF</key>
+		<key>0620508F19B5A5F50072EDDF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

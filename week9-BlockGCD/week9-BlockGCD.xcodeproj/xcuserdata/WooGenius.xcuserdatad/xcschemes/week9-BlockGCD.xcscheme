@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0620502B19B58F710072EDDF"
-               BuildableName = "Week9-Block&amp;GCD.app"
-               BlueprintName = "Week9-Block&amp;GCD"
-               ReferencedContainer = "container:Week9-Block&amp;GCD.xcodeproj">
+               BlueprintIdentifier = "0620506E19B5A5F50072EDDF"
+               BuildableName = "week9-BlockGCD.app"
+               BlueprintName = "week9-BlockGCD"
+               ReferencedContainer = "container:week9-BlockGCD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0620504C19B58F710072EDDF"
-               BuildableName = "Week9-Block&amp;GCDTests.xctest"
-               BlueprintName = "Week9-Block&amp;GCDTests"
-               ReferencedContainer = "container:Week9-Block&amp;GCD.xcodeproj">
+               BlueprintIdentifier = "0620508F19B5A5F50072EDDF"
+               BuildableName = "week9-BlockGCDTests.xctest"
+               BlueprintName = "week9-BlockGCDTests"
+               ReferencedContainer = "container:week9-BlockGCD.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0620502B19B58F710072EDDF"
-            BuildableName = "Week9-Block&amp;GCD.app"
-            BlueprintName = "Week9-Block&amp;GCD"
-            ReferencedContainer = "container:Week9-Block&amp;GCD.xcodeproj">
+            BlueprintIdentifier = "0620506E19B5A5F50072EDDF"
+            BuildableName = "week9-BlockGCD.app"
+            BlueprintName = "week9-BlockGCD"
+            ReferencedContainer = "container:week9-BlockGCD.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0620502B19B58F710072EDDF"
-            BuildableName = "Week9-Block&amp;GCD.app"
-            BlueprintName = "Week9-Block&amp;GCD"
-            ReferencedContainer = "container:Week9-Block&amp;GCD.xcodeproj">
+            BlueprintIdentifier = "0620506E19B5A5F50072EDDF"
+            BuildableName = "week9-BlockGCD.app"
+            BlueprintName = "week9-BlockGCD"
+            ReferencedContainer = "container:week9-BlockGCD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0620502B19B58F710072EDDF"
-            BuildableName = "Week9-Block&amp;GCD.app"
-            BlueprintName = "Week9-Block&amp;GCD"
-            ReferencedContainer = "container:Week9-Block&amp;GCD.xcodeproj">
+            BlueprintIdentifier = "0620506E19B5A5F50072EDDF"
+            BuildableName = "week9-BlockGCD.app"
+            BlueprintName = "week9-BlockGCD"
+            ReferencedContainer = "container:week9-BlockGCD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Week9-Block&amp;GCD.xcodeproj">
+      location = "self:week9-BlockGCD.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,6 +1,6 @@
 //
-//  Week9_Block_GCDTests.m
-//  Week9-Block&GCDTests
+//  week9_BlockGCDTests.m
+//  week9-BlockGCDTests
 //
 //  Created by WooGenius on 9/2/14.
 //  Copyright (c) 2014 WooGenius. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface Week9_Block_GCDTests : XCTestCase
+@interface week9_BlockGCDTests : XCTestCase
 
 @end
 
-@implementation Week9_Block_GCDTests
+@implementation week9_BlockGCDTests
 
 - (void)setUp
 {
