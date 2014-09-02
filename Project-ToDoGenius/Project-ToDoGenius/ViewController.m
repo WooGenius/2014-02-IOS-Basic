@@ -29,7 +29,9 @@
 @property (weak, nonatomic) IBOutlet TouchView *wrapper;
 @property CGFloat targetOffset;
 @property NSInteger scrollVelocity;
-@property NSInteger originOffset;
+@property NSInteger dstOffset;
+@property BOOL isAnimating;
+@property BOOL existDst;
 
 @end
 
@@ -71,24 +73,38 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    _targetOffset = targetContentOffset->x;
-    _scrollVelocity = velocity.x;
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSInteger dif = _dstOffset - [scrollView contentOffset].x;
     
-    if (_scrollVelocity == 0) {
-        [scrollView setContentOffset:[self getDstLocation] animated:YES];
+    if (_existDst && !_isAnimating && dif > -145 && dif < 145) {
+        [scrollView setContentOffset:CGPointMake((CGFloat)_dstOffset, 0) animated:YES];
+//        NSLog(@"Animating");
+        _isAnimating = YES;
     }
 }
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        scrollView.contentOffset = [self getDstLocation];
-    } completion:^(BOOL finished){}];
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+//    NSLog(@"Begin Dragging");
+    _isAnimating = NO;
+    _existDst = NO;
 }
 
-- (CGPoint)getDstLocation {
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+    NSLog(@"Will End Dragging");
+    _targetOffset = targetContentOffset->x;
+    _scrollVelocity = velocity.x;
+    
+    // Get Dst Location
+    [self getDstLocation];
+    
+    if (_scrollVelocity == 0) {
+        [scrollView setContentOffset:CGPointMake((CGFloat)_dstOffset, 0) animated:YES];
+    }
+}
+
+- (void)getDstLocation {
     // 이동거리
-    NSInteger dif = (NSInteger)_targetOffset - _originOffset;
+    NSInteger dif = (NSInteger)_targetOffset - _dstOffset;
     // 나머지
     NSInteger rest = dif % 290;
     // 나머지 보정
@@ -97,13 +113,13 @@
     }
     
     if (rest < 145) {
-        _originOffset = (NSInteger)(_targetOffset-rest);
+        _dstOffset = (NSInteger)(_targetOffset-rest);
     } else {
-        _originOffset = (NSInteger)(_targetOffset+(290-rest));
+        _dstOffset = (NSInteger)(_targetOffset+(290-rest));
     }
+    _existDst = YES;
     
-    NSLog(@"dif : %d, rest : %d, offset : %d", dif, rest, _originOffset);
-    return CGPointMake((CGFloat)_originOffset, 0);
+    NSLog(@"dif : %d, rest : %d, dstOffset : %d", dif, rest, _dstOffset);
 }
 
 @end

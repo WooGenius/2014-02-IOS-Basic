@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6C1570CC-A4D5-4588-B8AC-4D0F90A288B4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Week9-Block&amp;GCD</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B7731442-9A2D-416E-BB7C-AD17D3703A27</key>
+		<string>https://github.com/WooGenius/2014-02-IOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Week9-Block&amp;GCD/Week9-Block&amp;GCD.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B7731442-9A2D-416E-BB7C-AD17D3703A27</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/WooGenius/2014-02-IOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B7731442-9A2D-416E-BB7C-AD17D3703A27</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B7731442-9A2D-416E-BB7C-AD17D3703A27</string>
+			<key>IDESourceControlWCCName</key>
+			<string>2014-02-IOS-Basic</string>
+		</dict>
+	</array>
+</dict>
+</plist>
