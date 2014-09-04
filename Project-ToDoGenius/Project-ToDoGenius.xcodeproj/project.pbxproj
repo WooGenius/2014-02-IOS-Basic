@@ -21,7 +21,6 @@
 		0680278019B4BE71007D2297 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0680276219B4BE71007D2297 /* UIKit.framework */; };
 		0680278819B4BE71007D2297 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0680278619B4BE71007D2297 /* InfoPlist.strings */; };
 		0680278A19B4BE71007D2297 /* Project_ToDoGeniusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680278919B4BE71007D2297 /* Project_ToDoGeniusTests.m */; };
-		0680279619B4BEC9007D2297 /* hr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0680279519B4BEC9007D2297 /* hr.jpg */; };
 		0680279C19B4E9DA007D2297 /* WGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680279B19B4E9DA007D2297 /* WGViewController.m */; };
 		0680279F19B4EF2B007D2297 /* WGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680279E19B4EF2B007D2297 /* WGView.m */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		0680278519B4BE71007D2297 /* Project-ToDoGeniusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Project-ToDoGeniusTests-Info.plist"; sourceTree = "<group>"; };
 		0680278719B4BE71007D2297 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0680278919B4BE71007D2297 /* Project_ToDoGeniusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Project_ToDoGeniusTests.m; sourceTree = "<group>"; };
-		0680279519B4BEC9007D2297 /* hr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hr.jpg; sourceTree = "<group>"; };
 		0680279A19B4E9DA007D2297 /* WGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGViewController.h; sourceTree = "<group>"; };
 		0680279B19B4E9DA007D2297 /* WGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGViewController.m; sourceTree = "<group>"; };
 		0680279D19B4EF2B007D2297 /* WGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGView.h; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				0680279919B4E9BE007D2297 /* View */,
-				0680279519B4BEC9007D2297 /* hr.jpg */,
 				0680276D19B4BE71007D2297 /* AppDelegate.h */,
 				0680276E19B4BE71007D2297 /* AppDelegate.m */,
 				0680277019B4BE71007D2297 /* Main.storyboard */,
@@ -252,7 +249,6 @@
 				0680277719B4BE71007D2297 /* Images.xcassets in Resources */,
 				0680276919B4BE71007D2297 /* InfoPlist.strings in Resources */,
 				0680277219B4BE71007D2297 /* Main.storyboard in Resources */,
-				0680279619B4BEC9007D2297 /* hr.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +476,7 @@
 				0680278F19B4BE71007D2297 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0680279019B4BE71007D2297 /* Build configuration list for PBXNativeTarget "Project-ToDoGeniusTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +485,7 @@
 				0680279219B4BE71007D2297 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

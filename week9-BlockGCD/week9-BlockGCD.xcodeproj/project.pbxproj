@@ -22,6 +22,7 @@
 		0620509C19B5A5F50072EDDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0620509A19B5A5F50072EDDF /* InfoPlist.strings */; };
 		0620509E19B5A5F50072EDDF /* week9_BlockGCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0620509D19B5A5F50072EDDF /* week9_BlockGCDTests.m */; };
 		062050A819B5AB910072EDDF /* bookfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 062050A719B5AB910072EDDF /* bookfile.txt */; };
+		062050AB19B84ECE0072EDDF /* WordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 062050AA19B84ECE0072EDDF /* WordModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		0620509B19B5A5F50072EDDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0620509D19B5A5F50072EDDF /* week9_BlockGCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = week9_BlockGCDTests.m; sourceTree = "<group>"; };
 		062050A719B5AB910072EDDF /* bookfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bookfile.txt; sourceTree = "<group>"; };
+		062050A919B84ECE0072EDDF /* WordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordModel.h; sourceTree = "<group>"; };
+		062050AA19B84ECE0072EDDF /* WordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +120,13 @@
 				062050A719B5AB910072EDDF /* bookfile.txt */,
 				0620508119B5A5F50072EDDF /* AppDelegate.h */,
 				0620508219B5A5F50072EDDF /* AppDelegate.m */,
-				0620508419B5A5F50072EDDF /* Main.storyboard */,
 				0620508719B5A5F50072EDDF /* ViewController.h */,
 				0620508819B5A5F50072EDDF /* ViewController.m */,
 				0620508A19B5A5F50072EDDF /* Images.xcassets */,
 				0620507919B5A5F50072EDDF /* Supporting Files */,
+				062050A919B84ECE0072EDDF /* WordModel.h */,
+				062050AA19B84ECE0072EDDF /* WordModel.m */,
+				0620508419B5A5F50072EDDF /* Main.storyboard */,
 			);
 			path = "week9-BlockGCD";
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				0620508919B5A5F50072EDDF /* ViewController.m in Sources */,
 				0620508319B5A5F50072EDDF /* AppDelegate.m in Sources */,
 				0620507F19B5A5F50072EDDF /* main.m in Sources */,
+				062050AB19B84ECE0072EDDF /* WordModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +466,7 @@
 				062050A319B5A5F50072EDDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		062050A419B5A5F50072EDDF /* Build configuration list for PBXNativeTarget "week9-BlockGCDTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				062050A619B5A5F50072EDDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAd-Ua-J9f">
-                                <rect key="frame" x="97" y="359" width="126" height="33"/>
+                                <rect key="frame" x="97" y="268" width="126" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Click Please!">
+                                <state key="normal" title="애니메이션 보기">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -27,24 +27,59 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XND-x3-8Ig">
-                                <rect key="frame" x="80" y="59" width="160" height="178"/>
+                                <rect key="frame" x="20" y="100" width="280" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SxF-3T-uqt">
-                                <rect key="frame" x="85" y="301" width="150" height="2"/>
+                                <rect key="frame" x="85" y="321" width="151" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YgY-JJ-pER">
+                                <rect key="frame" x="0.0" y="36" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6W-YM-xkm">
+                                <rect key="frame" x="110" y="331" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="띄어쓰기 찾기">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn2Tapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eRk-ns-vSv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkN-CL-rba">
+                                <rect key="frame" x="110" y="369" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="많은 단어 찾기">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn3Tapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f4x-Il-QJa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="btn" destination="UAd-Ua-J9f" id="gfb-Ir-fyA"/>
                         <outlet property="pv" destination="SxF-3T-uqt" id="GWD-PB-4RP"/>
+                        <outlet property="sb" destination="YgY-JJ-pER" id="jPT-5u-DMF"/>
+                        <outlet property="searchDisplayController" destination="NZs-lU-3ik" id="vIu-bp-b5O"/>
                         <outlet property="uiv" destination="XND-x3-8Ig" id="lOM-U2-scf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="NZs-lU-3ik">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="JDU-QO-QVQ"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="K5d-Ha-sPM"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="x6h-Db-mdB"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="RiA-CV-hAJ"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
         </scene>
     </scenes>
